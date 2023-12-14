@@ -79,6 +79,13 @@ three(){
  	pause
 }
  
+# do something in four()
+four(){
+	clear
+	echo "REBOOT"
+        sudo reboot now
+}
+ 
 # function to display menus
 show_menus() {
 	clear
@@ -88,7 +95,8 @@ show_menus() {
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
 	echo "3. Dark Gnome/Wallpaper and Neofetch conf+Extension Manager (FLATHUB)"
-	echo "4. EXIT"
+	echo "4. REBOOT"
+	echo "5. EXIT"
 }
 # read input from the keyboard and take a action
 # invoke the one() when the user select 1 from the menu option.
@@ -101,7 +109,8 @@ read_options(){
 		1) one ;;
 		2) two ;;
 		3) three ;;
-		4) exit 0;;
+		4) four ;;
+		5) exit 0;;
 		*) echo -e "${RED}R U Dumb?${STD}" && sleep 2
 	esac
 }
