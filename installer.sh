@@ -73,6 +73,9 @@ three(){
 	echo "5.Tray Icons Reloaded"
 	echo "6.User Themes"
 	echo "Because i can't set the settings for these automatically, install them now on Extension Manager that i just installed for you."
+ 	echo "FREE TIP: ctrl+alt+t terminal. Settings>Keyboard>shortcuts>Custom [Name=Terminal] [Command=kgx] [Shortcut=CTRL+ALT+T]"
+  	echo "FREE TIP2: super+e folder. Settings>Keyboard>shortcuts>Launchers>Home Folder [Shortcut=SUPER+E]"
+   	echo "Thank Me Later! <3"
  	pause
 }
  
