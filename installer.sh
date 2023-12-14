@@ -45,6 +45,18 @@ two(){
         sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 }
  
+# do something in three()
+three(){
+	echo "Copying DOTS [ONLY TESTED ON GNOME]"
+	pause
+        gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+        git clone https://github.com/Lemi-01/installer.git /home/lemi01/Pictures/installer
+        cp /home/$USER/Pictures/installer/dots/wallpaper.png /home/$USER/Pictures/wallpaper.png
+        cp /home/$USER/Pictures/installer/dots/neofetch/config.conf /home/$USER/.config/neofetch/config.conf
+        rm -Rf /home/$USER/Pictures/installer/
+        gsettings set org.gnome.desktop.background picture-uri-dark file:///home/$USER/Pictures/wallpaper.png
+}
+ 
 # function to display menus
 show_menus() {
 	clear
@@ -53,7 +65,8 @@ show_menus() {
 	echo "~~~~~~~~~~~~~~~~~~~~~"
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
-	echo "3. EXIT"
+	echo "3. Dark Gnome/Wallpaper and Neofetch conf"
+	echo "4. EXIT"
 }
 # read input from the keyboard and take a action
 # invoke the one() when the user select 1 from the menu option.
@@ -61,19 +74,15 @@ show_menus() {
 # Exit when user the user select 3 form the menu option.
 read_options(){
 	local choice
-	read -p "Enter choice [ 1 - 3] " choice
+	read -p "Enter choice [ 1 - 4] " choice
 	case $choice in
 		1) one ;;
 		2) two ;;
-		3) exit 0;;
-		*) echo -e "${RED}Error...${STD}" && sleep 2
+		3) three ;;
+		4) exit 0;;
+		*) echo -e "${RED}R U Dumb?${STD}" && sleep 2
 	esac
 }
- 
-# ----------------------------------------------
-# Step #3: Trap CTRL+C, CTRL+Z and quit singles
-# ----------------------------------------------
-trap '' SIGINT SIGQUIT SIGTSTP
  
 # -----------------------------------
 # Step #4: Main logic - infinite loop
