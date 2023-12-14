@@ -56,9 +56,9 @@ three(){
         rm -Rf /home/$USER/Pictures/installer/
         gsettings set org.gnome.desktop.background picture-uri-dark file:///home/$USER/Pictures/wallpaper.png
         clear
-        echo installing Extension Manager [FLATHUB]
+        echo "installing Extension Manager [FLATHUB]"
         pause
-        sudo pacman -S flatpak
+        sudo pacman -S flatpak --noconfirm
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install flathub com.mattjakeman.ExtensionManager
 }
