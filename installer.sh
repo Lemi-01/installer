@@ -94,7 +94,7 @@ show_menus() {
 	echo "~~~~~~~~~~~~~~~~~~~~~"
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
-	echo "3. Dark Gnome/Wallpaper and Neofetch conf+Extension Manager (FLATHUB)"
+	echo "3. Dark Gnome+Wallpaper+Neofetch conf+Extension Manager (FLATHUB)"
 	echo "4. REBOOT"
 	echo "5. EXIT"
 }
