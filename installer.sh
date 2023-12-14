@@ -55,6 +55,12 @@ three(){
         cp /home/$USER/Pictures/installer/dots/neofetch/config.conf /home/$USER/.config/neofetch/config.conf
         rm -Rf /home/$USER/Pictures/installer/
         gsettings set org.gnome.desktop.background picture-uri-dark file:///home/$USER/Pictures/wallpaper.png
+        clear
+        echo installing Extension Manager [FLATHUB]
+        pause
+        sudo pacman -S flatpak
+	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	flatpak install flathub com.mattjakeman.ExtensionManager
 }
  
 # function to display menus
@@ -65,7 +71,7 @@ show_menus() {
 	echo "~~~~~~~~~~~~~~~~~~~~~"
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
-	echo "3. Dark Gnome/Wallpaper and Neofetch conf"
+	echo "3. Dark Gnome/Wallpaper and Neofetch conf+Extension Manager (FLATHUB)"
 	echo "4. EXIT"
 }
 # read input from the keyboard and take a action
