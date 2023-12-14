@@ -19,7 +19,7 @@ It's not shiny in any way and needs to be worked on but i'm on my way.
 Just run
 
 ```bash
- wget https://raw.githubusercontent.com/Lemi-01/installer/main/installer.sh -O /tmp/installer.sh && bash /tmp/installer.sh && rm /tmp/installer.sh
+ bash <(curl -s https://raw.githubusercontent.com/Lemi-01/installer/main/installer.sh)
 
 ```
 And select 1-3 options what to do.
