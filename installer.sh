@@ -83,7 +83,7 @@ three(){
 four(){
 	clear
 	echo "REBOOT"
-        sudo reboot now
+        reboot
 }
  
 # function to display menus
