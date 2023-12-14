@@ -71,6 +71,7 @@ three(){
 	echo "5.Tray Icons Reloaded"
 	echo "6.User Themes"
 	echo "Because i can't set the settings for these automatically, install them now on Extension Manager that i just installed for you."
+ 	pause
 }
  
 # function to display menus
