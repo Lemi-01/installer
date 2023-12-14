@@ -61,6 +61,7 @@ three(){
         sudo pacman -S flatpak --noconfirm
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install flathub com.mattjakeman.ExtensionManager
+ 	flatpak run com.mattjakeman.ExtensionManager
 	clear
 	echo "My suggestion of extensions:"
 	echo "1.Blur My Shell"
