@@ -14,5 +14,3 @@ Just run
  IN CONSTRUCTION
 
 ```
-
-# installer
