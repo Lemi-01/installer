@@ -7,7 +7,7 @@ It's not shiny in any way and needs to be worked on but i'm on my way.
 
 ## Features
 
-- Steam, Discord, Betterdiscordctl, Lutris, Protonup-QT, Wine dependency hell (thanks Glorious Eggroll!)
+- Steam, Discord, Betterdiscordctl, Lutris, Protonup-QT, Wine dependency hell (thanks [Glorious Eggroll](https://www.gloriouseggroll.tv/how-to-get-out-of-wine-dependency-hell/)!)
 - btop, lolcat, neofetch, cowsay
 - Installs yay if on manjaro or other arch based distro with no yay preinstalled
 - HAS EXIT BUTON!!1!!!11
