@@ -25,6 +25,7 @@ Just run
 And select 1-3 options what to do.
 1. Intall packages i use
 2. Install yay
-3. EXIT
+3. Dark GNOME/Wallpaper and neofetch config
+4. EXIT
 
-It will always return to menu after completing task and you can just easily exit from there by pressing 3.
+It will always return to menu after completing task and you can just easily exit from there by pressing 3 or crtl+c.
