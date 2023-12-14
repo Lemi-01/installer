@@ -11,6 +11,6 @@ It's not shiny in any way and needs to be worked on but i'm on my way.
 Just run
 
 ```bash
- IN CONSTRUCTION
+ wget https://raw.githubusercontent.com/Lemi-01/installer/main/installer.sh -O /tmp/installer.sh && bash /tmp/installer.sh && rm /tmp/installer.sh
 
 ```
