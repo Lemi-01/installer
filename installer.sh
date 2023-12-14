@@ -61,6 +61,15 @@ three(){
         sudo pacman -S flatpak --noconfirm
 	flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 	flatpak install flathub com.mattjakeman.ExtensionManager
+	clear
+	echo "My suggestion of extensions:"
+	echo "1.Blur My Shell"
+	echo "2.Dash To Dock"
+	echo "3.Extension List"
+	echo "4.Just Perfection"
+	echo "5.Tray Icons Reloaded"
+	echo "6.User Themes"
+	echo "Because i can't set the settings for these automatically, install them now on Extension Manager that i just installed for you."
 }
  
 # function to display menus
