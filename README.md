@@ -23,11 +23,11 @@ Just run
  bash <(curl -s https://raw.githubusercontent.com/Lemi-01/installer/main/installer.sh)
 
 ```
-And select 1-3 options what to do.
+And select 1-5 options what to do.
 1. Intall packages i use
 2. Install yay
 3. Dark GNOME/Wallpaper and neofetch config
 4. REBOOT
 5. EXIT
 
-It will always return to menu after completing task and you can just easily exit from there by pressing 3 or crtl+c.
+It will always return to menu after completing task and you can just easily exit from there by pressing 5 or crtl+c.
