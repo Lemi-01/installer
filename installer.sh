@@ -3,16 +3,6 @@ function pause(){
  read -s -n 1 -p "Press any key to continue . . ."
  echo ""
 }
-read -r -d '' BANNER << EOF
-
-┬  ┌─┐┌┬┐┬  ┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  ┌─┐┬─┐
-│  ├┤ ││││  ││││└─┐ │ ├─┤│  │  ├┤ ├┬┘
-┴─┘└─┘┴ ┴┴  ┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘└─┘┴└─
-
-EOF
-clear
-echo -e "$BANNER"
-pause 
 # A menu driven shell script sample template 
 ## ----------------------------------
 # Step #1: Define variables
@@ -208,9 +198,11 @@ four(){
 # function to display menus
 show_menus() {
 	clear
-	echo "~~~~~~~~~~~~~~~~~~~~~"	
-	echo " M A I N - M E N U"
-	echo "~~~~~~~~~~~~~~~~~~~~~"
+	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+	echo "┬  ┌─┐┌┬┐┬  ┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  ┌─┐┬─┐"
+	echo "│  ├┤ ││││  ││││└─┐ │ ├─┤│  │  ├┤ ├┬┘"
+	echo "┴─┘└─┘┴ ┴┴  ┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘└─┘┴└─"
+	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
 	echo "3. Dark Gnome+Wallpaper+Neofetch conf+Extension Manager (FLATHUB)"
