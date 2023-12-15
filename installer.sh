@@ -21,9 +21,11 @@ pause(){
 
 one(){
 	clear
+	echo "~~~~~~~~~~~~~~~~~~~"
 	echo "┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  "
 	echo "││││└─┐ │ ├─┤│  │  "
 	echo "┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘"
+	echo "~~~~~~~~~~~~~~~~~~~"
 	echo "Installing following programs:"
 	echo "(Including Wine dependency hell)"
 	echo
@@ -38,6 +40,8 @@ one(){
         clear
         echo "CHECKING INSTALLED PACKAGES"
         echo "RE-RUN IF ERRORS OCCUR"
+
+ 	
         #I AM TERRIBLY SORRY FOR THIS SECTION
         package=neofetch
 	if pacman -Qs $package > /dev/null ; then
@@ -154,18 +158,22 @@ one(){
 # do something in two()
 two(){
 	clear
+	echo "~~~~~~~~~"
 	echo "┬ ┬┌─┐┬ ┬"
 	echo "└┬┘├─┤└┬┘"
 	echo " ┴ ┴ ┴ ┴ "
+	echo "~~~~~~~~~"
         sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 }
  
 # do something in three()
 three(){
 	clear
+	echo "~~~~~~~~~~~~"
  	echo "┌─┐┌─┐┌┐┌┌─┐"
  	echo "│  │ ││││├┤ "
  	echo "└─┘└─┘┘└┘└  "
+	echo "~~~~~~~~~~~~"
 	echo "[ONLY TESTED ON GNOME]"
 	pause
         gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
@@ -198,9 +206,11 @@ three(){
 # do something in four()
 four(){
 	clear
+	echo "~~~~~~~~~~~~~~~~~~"
 	echo "┬─┐┌─┐┌┐ ┌─┐┌─┐┌┬┐"
 	echo "├┬┘├┤ ├┴┐│ ││ │ │ "
 	echo "┴└─└─┘└─┘└─┘└─┘ ┴ "
+	echo "~~~~~~~~~~~~~~~~~~"
         reboot
 }
  
