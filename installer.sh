@@ -21,7 +21,9 @@ pause(){
 
 one(){
 	clear
-	echo
+	echo "┬┌┐┌┌─┐┌┬┐┌─┐┬  ┬  "
+	echo "││││└─┐ │ ├─┤│  │  "
+	echo "┴┘└┘└─┘ ┴ ┴ ┴┴─┘┴─┘"
 	echo "Installing following programs:"
 	echo "(Including Wine dependency hell)"
 	echo
@@ -152,14 +154,19 @@ one(){
 # do something in two()
 two(){
 	clear
-	echo "Installing YAY"
+	echo "┬ ┬┌─┐┬ ┬"
+	echo "└┬┘├─┤└┬┘"
+	echo " ┴ ┴ ┴ ┴ "
         sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 }
  
 # do something in three()
 three(){
 	clear
-	echo "Copying DOTS [ONLY TESTED ON GNOME]"
+ 	echo "┌─┐┌─┐┌┐┌┌─┐"
+ 	echo "│  │ ││││├┤ "
+ 	echo "└─┘└─┘┘└┘└  "
+	echo "[ONLY TESTED ON GNOME]"
 	pause
         gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
         git clone https://github.com/Lemi-01/installer.git /home/lemi01/Pictures/installer
@@ -191,7 +198,9 @@ three(){
 # do something in four()
 four(){
 	clear
-	echo "REBOOT"
+	echo "┬─┐┌─┐┌┐ ┌─┐┌─┐┌┬┐"
+	echo "├┬┘├┤ ├┴┐│ ││ │ │ "
+	echo "┴└─└─┘└─┘└─┘└─┘ ┴ "
         reboot
 }
  
