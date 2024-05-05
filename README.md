@@ -27,7 +27,8 @@ And select 1-5 options what to do.
 1. Intall packages i use
 2. Install yay
 3. Dark GNOME/Wallpaper and neofetch config
-4. REBOOT
-5. EXIT
+4. Fish and Config
+5. REBOOT
+6. EXIT
 
 It will always return to menu after completing task and you can just easily exit from there by pressing 5 or crtl+c.
