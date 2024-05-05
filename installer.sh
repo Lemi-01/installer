@@ -221,8 +221,25 @@ three(){
  	pause
 }
  
-# do something in four()
+# do something in Four()
 four(){
+	clear
+        yay -S fish
+        clear
+        echo "Now that im not skilled coder, you need to open another terminal window and run these commands in order"
+        echo "1. fish" 
+        echo "2. curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source"
+        echo "3. fisher install jorgebucaran/fisher && fisher install IlanCosman/tide@v6"
+        pause
+        clear
+        echo "Changing shell to Fish:"
+        chsh -s $(which fish)
+
+}
+ 
+ 
+# do something in Five()
+five(){
 	clear
 	echo "~~~~~~~~~~~~~~~~~~"
 	echo "┬─┐┌─┐┌┐ ┌─┐┌─┐┌┬┐"
@@ -231,7 +248,6 @@ four(){
 	echo "~~~~~~~~~~~~~~~~~~"
         reboot
 }
- 
 # function to display menus
 show_menus() {
 	clear
@@ -243,8 +259,9 @@ show_menus() {
 	echo "1. Install With YAY"
 	echo "2. Install Only YAY"
 	echo "3. Dark Gnome+Wallpaper+Neofetch conf+Extension Manager (FLATHUB)"
-	echo "4. REBOOT"
-	echo "5. EXIT"
+	echo "4. Fish and Config"
+	echo "5. REBOOT"
+	echo "6. EXIT"
 }
 # read input from the keyboard and take a action
 # invoke the one() when the user select 1 from the menu option.
@@ -252,13 +269,14 @@ show_menus() {
 # Exit when user the user select 3 form the menu option.
 read_options(){
 	local choice
-	read -p "Enter choice [ 1 - 5] " choice
+	read -p "Enter choice [ 1 - 6] " choice
 	case $choice in
 		1) one ;;
 		2) two ;;
 		3) three ;;
 		4) four ;;
-		5) exit 0;;
+		5) five ;;
+		6) exit 0;;
 		*) echo -e "${RED}R U Dumb?${STD}" && sleep 2
 	esac
 }
