@@ -17,7 +17,7 @@ It's not shiny in any way and needs to be worked on but i'm on my way.
 
 ## Usage
 
-Just run
+Just run (in bash)
 
 ```bash
  bash <(curl -s https://raw.githubusercontent.com/Lemi-01/installer/main/installer.sh)
